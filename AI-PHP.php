@@ -40,7 +40,8 @@ if (is_dir($dir)){
     //Create a loop and read each line in the file
     while (($file = readdir($dh)) !== false){
 
-
+    //Variable to change the status and stabilize the status    
+    $flag = 0 ;
 
 
 
