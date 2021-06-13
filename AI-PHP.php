@@ -51,5 +51,22 @@ if (is_dir($dir)){
 
     // image => IMAGE (Optional)    
     $string_search = strtoupper($file); 
+     
+      //It loops the desired text that is read from the file
+      //Compares by percentage.
+      for($counter=0;$counter<=$lines;$counter++){
+      $sim = similar_text($content[$counter],$string_search, $perc);
+      // % 0٪ -> 100%
+      if($perc>90){
+
+        $sql = "INSERT INTO TABLE (column1,column2,column3)
+        VALUES ('data', 'data', 'data')";
+        if ($conn->query($sql) === TRUE) {
+         echo "New record created successfully";
+        $flag = 1;
+        }
+      }
+      }
+
       
 ?>
