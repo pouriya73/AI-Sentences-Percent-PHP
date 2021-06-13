@@ -70,5 +70,9 @@ if (is_dir($dir)){
    
       
   if(!$flag){echo "No results found"."<br>";}
-      
+  
+      }
+    closedir($dh);
+  }
+  
 ?>
