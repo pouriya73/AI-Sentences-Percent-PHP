@@ -43,6 +43,13 @@ if (is_dir($dir)){
     //Variable to change the status and stabilize the status    
     $flag = 0 ;
 
+    //In this step, we can analyze the desired text.
+    //For example, here we tried to separate the names of the images 
+    //in the file and they are without extensions.
+    //For example  : image.jpeg => image   
+    $file = preg_replace('/\\.[^.\\s]{3,4}$/', '', $file);
 
-
+    // image => IMAGE (Optional)    
+    $string_search = strtoupper($file); 
+      
 ?>
