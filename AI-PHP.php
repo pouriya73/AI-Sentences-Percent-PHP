@@ -15,4 +15,24 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
+//In this section, you can use the file.
+//Or get information from the database . 
+//Or via the POST and GET method . 
+$dir = "directory/";
+
+//File name and file extension
+$file2 = "nameFile.txt";
+
+//Determine the number of lines used in the file
+// function count()
+$lines = count(file($file2));
+
+//Insert file information into an internal variable
+$content = file('nameFile.txt');
+
+
+
+
+
+
 ?>
