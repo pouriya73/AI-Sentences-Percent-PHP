@@ -6,7 +6,8 @@
   $username = "USERNAME";
   $password = "PASSWORD";
   $dbname = "DATABASE_NAME";
-
+  
+  // Use MYSQL -we used MYSQLi Connection - you able to use PDO
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
   // Check connection
