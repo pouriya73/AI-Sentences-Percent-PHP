@@ -31,6 +31,15 @@ $lines = count(file($file2));
 $content = file('nameFile.txt');
 
 
+// Open a directory, and read its contents
+if (is_dir($dir)){
+  
+  //Checking the correctness of the information call
+  if ($dh = opendir($dir)){
+    
+    //Create a loop and read each line in the file
+    while (($file = readdir($dh)) !== false){
+
 
 
 
